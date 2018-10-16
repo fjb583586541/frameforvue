@@ -1,6 +1,6 @@
 <template>
   <div class="routerLost-v v-wrap">
-    <FHeader :config="FHeaderCfg"></FHeader>
+    <FHeader></FHeader>
     <div class="v-body" ref="vBody">
       <div class="err-img">
         <img src="../assets/images/404.png" alt="404错误">
@@ -17,13 +17,6 @@
   import FHeader from '../components/FHeader/FHeader'
   export default {
     name: 'routerLost',
-    data() {
-      return {
-        FHeaderCfg: {
-          title: '很抱歉，网页丢失了'
-        }
-      }
-    },
     components: {
       FHeader
     }

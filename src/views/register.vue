@@ -1,7 +1,7 @@
 <!-- http://192.168.1.82:8888/#/register?recommendId=19959522028 -->
 <template>
   <div class="register-v v-wrap">
-    <FHeader :config="FHeaderCfg"></FHeader>
+    <FHeader></FHeader>
     <div class="v-body" ref="vBody">
       <form>
         <div class="FCell">
@@ -55,9 +55,6 @@
     name: 'register',
     data() {
       return {
-        FHeaderCfg: {
-          title: '注册'
-        },
         iphone: '',
         msgCode: '',
         password: '',

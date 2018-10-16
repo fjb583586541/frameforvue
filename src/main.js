@@ -17,9 +17,8 @@ require('./assets/less/css.less')
 Vue.prototype.$ = require('./assets/js/fn.js').default
 
 import vconsole from 'vconsole'
-if (process.env.NODE_ENV === 'development') {
-  let vConsole = new vconsole()
-  Vue.use(vConsole)
+if (process.env.NODE_ENV === 'development') { // 开发环境才生效
+  Vue.use(new vconsole())
 }
 
 Vue.config.productionTip = false

@@ -1,7 +1,7 @@
 <!-- http://192.168.1.82:8888/#/lineDetails?productCode=cp94417232 -->
 <template>
   <div class="lineDetails-v v-wrap">
-    <FHeader :config="FHeaderCfg"></FHeader>
+    <FHeader></FHeader>
     <div class="v-body" ref="vBody" v-show="!initAjax">
       <!-- 轮播 -->
       <div class="banner">
@@ -289,9 +289,6 @@
       return {
         initAjax: true,
 
-        FHeaderCfg: {
-          title: '线路详情'
-        },
         FReturnTopCfg: {},
 
         activityCfg: {

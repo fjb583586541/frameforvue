@@ -1,6 +1,6 @@
 <template>
   <div class="album-v v-wrap">
-    <FHeader :config="FHeaderCfg"></FHeader>
+    <FHeader></FHeader>
     <div class="v-body" ref="vBody">
       <ul class="clearfix">
         <li v-for="(list, index) in thumbnails" v-bind:key="list.id" @click="show(index)">
@@ -24,9 +24,6 @@
     name: 'album',
     data() {
       return {
-        FHeaderCfg: {
-          title: '相册'
-        },
         FReturnTopCfg: {},
         thumbnails: [],
         desc: '',

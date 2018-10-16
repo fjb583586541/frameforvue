@@ -1,6 +1,6 @@
 <template>
   <div class="coupon-v v-wrap">
-    <FHeader :config="FHeaderCfg"></FHeader>
+    <FHeader></FHeader>
     <div class="v-body" ref="vBody" v-show="!initAjax">
       <div :class="['FScrollMore', { 'app-client': $.isAppClient() }]" ref="scrollWrap">
         <ul class="lists" ref="lists">
@@ -61,9 +61,6 @@
       return {
         initAjax: true,
 
-        FHeaderCfg: {
-          title: '领取优惠券'
-        },
         FReturnTopCfg: {},
 
         scrollWrapHeight: 0,

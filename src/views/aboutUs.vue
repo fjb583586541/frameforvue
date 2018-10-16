@@ -1,6 +1,6 @@
 <template>
   <div class="aboutUs-v v-wrap">
-    <FHeader :config="FHeaderCfg"></FHeader>
+    <FHeader></FHeader>
     <div class="v-body" ref="vBody">
       <h2>企业简介</h2>
       <p>广州牛掰旅游科技有限公司（以下简称牛掰旅游）于2017年11月15日正式注册成立。牛掰旅游以“纯玩品质旅游，悦享贴心服务”为服务宗旨，提供包含周边游、国内游、出境游等高质感纯玩的旅游服务，是针对当代旅行发烧友着力打造的在线个性化旅游定制平台。</p>
@@ -31,9 +31,6 @@
     name: 'aboutUs',
     data() {
       return {
-        FHeaderCfg: {
-          title: '广州牛掰旅游科技有限公司'
-        },
         FReturnTopCfg: {}
       }
     },

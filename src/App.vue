@@ -15,25 +15,32 @@
       }
     },
     created() {
-      this.updateTitle()
-      this.navigation()
-
-      this.$.stRemove('token')
+      this.updateViewTitle(this.$route.meta.title)
     },
     methods: {
-      navigation() {
-        this.$navigation.on('forward', (to, from) => {
-          this.updateTitle()
-        })
-        this.$navigation.on('back', (to, from) => {
-          this.updateTitle()
-        })
-        this.$navigation.on('replace', (to, from) => {
-          this.updateTitle()
+      updateViewTitle(title) {
+        document.title = title
+
+        if (!this.$.isAppClient()) {
+          return
+        }
+        this.$.mutualToApp({
+          'project': 'nb',
+          'password': 'viewTitle',
+          'param': {
+            'title': title
+          }
         })
       },
-      updateTitle() {
-        document.title = this.$route.meta.title
+      navigation() {
+        this.$navigation.on('forward', (to, from) => {}) // 路由前进
+        this.$navigation.on('back', (to, from) => {}) // 路由后退
+        this.$navigation.on('replace', (to, from) => {}) // 路由替换
+      }
+    },
+    watch: {
+      $route(to){
+        this.updateViewTitle(to.meta.title)
       }
     }
   }

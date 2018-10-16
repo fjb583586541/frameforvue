@@ -1,6 +1,6 @@
 <template>
   <div class="buyNotes-v v-wrap">
-    <FHeader :config="FHeaderCfg"></FHeader>
+    <FHeader></FHeader>
     <div class="v-body" ref="vBody">
       <div class="item" v-for="item in items" v-bind:key="item.id">
         <div class="column-name" v-html="item.title"></div>
@@ -18,9 +18,6 @@
     name: 'buyNotes',
     data() {
       return {
-        FHeaderCfg: {
-          title: '购买须知'
-        },
         FReturnTopCfg: {},
         items: []
       }

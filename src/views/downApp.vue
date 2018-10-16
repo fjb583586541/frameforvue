@@ -1,6 +1,6 @@
 <template>
   <div class="downApp-v v-wrap">
-    <FHeader :config="FHeaderCfg"></FHeader>
+    <FHeader></FHeader>
     <div class="v-body" ref="vBody">
       <div class="prompt">恭喜注册成功！</div>
       <p>下载牛掰旅游，开启你牛掰的人生</p>
@@ -21,9 +21,6 @@
     name: 'downApp',
     data() {
       return {
-        FHeaderCfg: {
-          title: '下载App'
-        },
         downSrc: ''
       }
     },

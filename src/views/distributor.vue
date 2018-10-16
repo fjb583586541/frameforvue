@@ -1,6 +1,6 @@
 <template>
   <div class="distributor-v v-wrap">
-    <FHeader :config="FHeaderCfg"></FHeader>
+    <FHeader></FHeader>
     <div class="v-body" ref="vBody">
       <h2>广东牛掰旅游科技有限公司业务合作协议</h2>
       <div class="text-right">编号：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
@@ -173,9 +173,6 @@
     name: 'distributor',
     data() {
       return {
-        FHeaderCfg: {
-          title: '升级分销商协议'
-        },
         FReturnTopCfg: {}
       }
     },

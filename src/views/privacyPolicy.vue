@@ -1,6 +1,6 @@
 <template>
   <div class="privacyPolicy-v v-wrap">
-    <FHeader :config="FHeaderCfg"></FHeader>
+    <FHeader></FHeader>
     <div class="v-body" ref="vBody">
       <h2>用户隐私制度</h2>
       <p>尊重用户个人隐私是广州牛掰旅游科技有限公司的一项基本政策。所以，作为对以上第二点个人注册资料分析的补充，广州牛掰旅游科技有限公司不会公开、编辑或透露用户的补充资料及保存在牛掰旅游网络会员服务中的非公开内容，除非有法律许可要求或广州牛掰旅游科技有限公司在诚信的基础上认为透露这些信件在以下三种情况是必要的：</p>
@@ -211,9 +211,6 @@
     name: 'privacyPolicy',
     data() {
       return {
-        FHeaderCfg: {
-          title: '用户隐私制度'
-        },
         FReturnTopCfg: {}
       }
     },

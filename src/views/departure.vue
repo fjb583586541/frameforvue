@@ -1,6 +1,6 @@
 <template>
   <div class="departure-v v-wrap">
-    <FHeader :config="FHeaderCfg"></FHeader>
+    <FHeader></FHeader>
     <div class="v-body" ref="vBody">
       <div class="main" ref="main">
         <div class="item" v-for="item in mainList" v-bind:key="item.id" ref="anchor">
@@ -26,9 +26,6 @@
     name: 'departure',
     data() {
       return {
-        FHeaderCfg: {
-          title: '请选择出发地'
-        },
         mainList: [],
         initialList: [
           'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U',

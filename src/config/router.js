@@ -20,7 +20,7 @@ import activity from '@/views/activity'
 // import doubtDetail from '@/views/doubtDetail'
 import departure from '@/views/departure'
 // import schedule from '@/views/schedule'
-import travels from '@/views/travels'
+// import travels from '@/views/travels'
 // import resource from '@/views/resource'
 // import fillOrder from '@/views/fillOrder'
 import downApp from '@/views/downApp'
@@ -29,11 +29,10 @@ import downApp from '@/views/downApp'
 // import addUser from '@/views/addUser'
 // import searchUser from '@/views/searchUser'
 // import invoice from '@/views/invoice'
-import specialNeeds from '@/views/specialNeeds'
+// import specialNeeds from '@/views/specialNeeds'
 import visaNotes from '@/views/visaNotes'
 import bookNotes from '@/views/bookNotes'
 import buyNotes from '@/views/buyNotes'
-
 
 Vue.use(Router)
 
@@ -260,22 +259,22 @@ export default new Router({
     //     title: '编辑发票信息'
     //   }
     // },
-    {
-      path: '/specialNeeds',
-      name: 'specialNeeds',
-      component: specialNeeds,
-      meta: {
-        title: '特殊需求'
-      }
-    },
-    {
-      path: '/travels',
-      name: 'travels',
-      component: travels,
-      meta: {
-        title: '相关游记'
-      }
-    },
+    // {
+    //   path: '/specialNeeds',
+    //   name: 'specialNeeds',
+    //   component: specialNeeds,
+    //   meta: {
+    //     title: '特殊需求'
+    //   }
+    // },
+    // {
+    //   path: '/travels',
+    //   name: 'travels',
+    //   component: travels,
+    //   meta: {
+    //     title: '相关游记'
+    //   }
+    // },
     {
       path: '/*',
       name: 'routerLost',

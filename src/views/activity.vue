@@ -1,6 +1,6 @@
 <template>
   <div class="activity-v v-wrap">
-    <FHeader :config="FHeaderCfg"></FHeader>
+    <FHeader></FHeader>
     <div class="v-body" ref="vBody">
       <ul>
         <li v-for="item in activityLists" v-bind:key="item.id">
@@ -34,9 +34,6 @@
     name: 'activity',
     data() {
       return {
-        FHeaderCfg: {
-          title: '优惠活动'
-        },
         activityLists: []
       }
     },
