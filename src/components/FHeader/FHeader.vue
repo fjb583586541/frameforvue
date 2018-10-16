@@ -11,20 +11,18 @@
     name: 'FHeader',
     props: ['config'],
     activated() {
-      this.updateAppTitle()
+      if (!this.$.isAppClient()) {
+        return
+      }
+      this.$.mutualToApp({
+        'project': 'nb',
+        'password': 'viewTitle',
+        'param': {
+          title: this.$route.meta.title
+        }
+      })
     },
     methods: {
-      updateAppTitle() {
-        if (this.$.isAppClient()) {
-          this.$.mutualToApp({
-            'project': 'nb',
-            'password': 'viewTitle',
-            'param': {
-              title: this.$route.meta.title
-            }
-          })
-        }
-      },
       goBack() {
         this.$router.back(-1)
       }
