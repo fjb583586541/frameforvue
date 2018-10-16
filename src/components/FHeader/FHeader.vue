@@ -10,9 +10,6 @@
   export default {
     name: 'FHeader',
     props: ['config'],
-    created() {
-      this.updateAppTitle()
-    },
     activated() {
       this.updateAppTitle()
     },

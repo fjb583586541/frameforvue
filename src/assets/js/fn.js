@@ -100,6 +100,9 @@ const fn = {
     return window.navigator.userAgent.match(/cjApp/) !== null
   },
   mutualToApp(data) {
+    if (fn.isEmptyObj(window[data.project + 'App'])) {
+      return
+    }
     window[data.project + 'App'].appLinkNative(data.project + ".native.page." + data.password, JSON.stringify(data.param))
   },
   isWeixinClient() {
