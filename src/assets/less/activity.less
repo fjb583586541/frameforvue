@@ -1,0 +1,37 @@
+.activity-v {
+  ul {
+    font-size: .32rem;
+    line-height: .42rem;
+  }
+
+  li {
+    background-color: #fff;
+    margin-bottom: .2rem;
+    padding: .36rem .24rem .06rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .cell {
+    &:extend(.df);
+    margin-bottom: .3rem;
+  }
+  .key {
+    width: 1.66rem;
+    color: #666666;
+  }
+  .val {
+    flex: 1;
+    color: #202020;
+    .type {
+      padding: 0 .12rem;
+      line-height: .42rem;
+      color: #ff3f12;
+      font-size: .24rem;
+      &:before {
+        border-color: #ff3f12;
+        border-radius: .04rem;
+      }
+    }
+  }
+}

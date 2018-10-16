@@ -1,0 +1,58 @@
+.departure-v {
+  &.v-wrap {
+    background-color: #fff !important;
+  }
+
+  .main {
+    &:extend(.pa);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    padding-right: .72rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    .initial {
+      line-height: .8rem;
+      color: #202020;
+      font-size: .32rem;
+      font-weight: bold;
+      padding-left: .24rem;
+      background-color: #f3f4f5;
+    }
+
+    ul {
+      padding-left: .24rem;
+    }
+
+    li {
+      line-height: .9rem;
+      font-size: .28rem;
+      color: #202020;
+      border-top: 1px solid #ddd;
+
+      &:first-child {
+        border: none;
+      }
+    }
+  }
+
+  .initial-list {
+    &:extend(.pa);
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9;
+    width: .72rem;
+    color: #03b68f;
+    font-size: .24rem;
+    line-height: 1.5;
+    &:extend(.aic);
+
+    ul {
+      text-align: center;
+      width: 100%;
+    }
+  }
+}

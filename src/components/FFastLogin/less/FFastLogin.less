@@ -1,0 +1,55 @@
+.FFastLogin {
+  padding: .2rem 0 .1rem;
+  .FCell {
+    margin: 0 .24rem;
+    min-height: 1.1rem;
+    .val {
+      margin-right: .2rem;
+      width: 3rem;
+    }
+    .key {
+      width: .32rem;
+      height: .48rem;
+      margin: 0 .2rem 0 .3rem;
+      &:extend(.jccaic);
+
+      &:after {
+        content: '\200B';
+      }
+
+      &.login-iphone:after {
+        width: .28rem;
+        height: .36rem;
+        .bg-image('iphone.png');
+      }
+
+      &.msg-code:after {
+        width: .32rem;
+        height: .32rem;
+        .bg-image('msg_code.png');
+      }
+    }
+    &.Msg-code input {
+      width: 2rem;
+    }
+    .FMsgCode {
+      width: 2rem;
+    }
+  }
+  .des {
+    line-height: 1;
+    font-size: .2rem;
+    color: #666;
+    padding: .2rem 0;
+    text-align: left;
+    margin-left: .24rem;
+  }
+  .login {
+    line-height: .8rem;
+    font-size: .32rem;
+    background-color: #03b68f;
+    color: #fff;
+    margin: .2rem .24rem 0;
+    border-radius: .4rem;
+  }
+}

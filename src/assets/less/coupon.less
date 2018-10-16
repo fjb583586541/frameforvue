@@ -1,0 +1,111 @@
+.coupon-v {
+  background-color: #fff !important;
+
+  .FScrollMore {
+    &:extend(.pa);
+    padding: 0 .24rem;
+    &.app-client {
+      bottom: 1rem;
+    }
+    .lists {
+      padding-top: .2rem;
+    }
+    li {
+      border-radius: .2rem;
+      background-color: #fef6f2;
+      margin-bottom: .2rem;
+      padding: 0 .24rem;
+    }
+    dl {
+      &:extend(.jcsb);
+      align-items: center;
+    }
+    dt {
+      width: 1.3rem;
+      line-height: .6rem;
+      border-radius: .3rem;
+      background-color: #fd8b2f;
+      font-size: .28rem;
+      color: #fff;
+      text-align: center;
+      &.disabled {
+        background-color: #cccccc;
+      }
+    }
+    dd {
+      padding: .32rem 0 .36rem;
+      width: 5rem;
+      .money {
+        font-size: .28rem;
+        color: #202020;
+        line-height: 1;
+        &:extend(.df);
+        align-items: flex-end;
+        .price {
+          font-size: .5rem;
+          color: #ff3f12;
+          var {
+            font-size: .28rem;
+          }
+        }
+        .condition {
+          margin: 0 0 .06rem .14rem;
+        }
+      }
+      .term-validity {
+        color: #666666;
+        font-size: .24rem;
+        line-height: 1;
+        margin: .12rem 0 .2rem;
+      }
+      .rule {
+        color: #666666;
+        font-size: .24rem;
+        line-height: 1;
+        &:extend(.aic);
+        .icon {
+          &:extend(.dib);
+          vertical-align: top;
+          width: .1rem;
+          height: .18rem;
+          margin-left: .1rem;
+          .bg-image('more_right_10x18.png');
+        }
+      }
+    }
+  }
+
+  .navs {
+    
+    &:extend(.pa);
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    &:extend(.df);
+    line-height: 1rem;
+    text-align: center;
+    font-size: .32rem;
+    color: #202020;
+    
+    li {
+      flex: 1;
+      .vux-1px-t;
+      &:nth-child(2):after {
+        content: " ";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1px;
+        bottom: 0;
+        border-left: 1px solid #ddd;
+        color: #ddd;
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: scaleX(0.5);
+        transform: scaleX(0.5);
+        // .vux-1px-l;
+      }
+    }
+  }
+}
